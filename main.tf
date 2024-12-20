@@ -16,4 +16,7 @@ provider "linux" {
 
 resource "linux_file" "unnatifile" {
     path = "/tmp/testdir"
+    owner = 1000
+    group = 1000
+    mode = "755"
 }
